@@ -1,0 +1,15 @@
+<div class="header">
+  <img src="" alt="logo"> 
+  <ul>
+    @for(item of menuOptions; track item){
+      <li>{{item}}
+      </li>
+    }
+      @empty{
+        <p>Error</p>
+      }
+    
+  </ul>
+  <app-button></app-button>
+  <app-button></app-button>
+</div>
