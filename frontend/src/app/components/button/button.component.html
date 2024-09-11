@@ -1,1 +1,7 @@
-<button>Send</button>
+<button [class]="'btn-'+variants"[disabled]="disabled" (click)="onclick">
+  @if(!loading){
+    {{text}}
+  }@else{
+    <p>...carregando</p>
+  }
+</button>
